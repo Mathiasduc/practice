@@ -2,7 +2,9 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<title>Airbnb</title>
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu|Work+Sans" rel="stylesheet">
 	<link rel="stylesheet" href="public/style.css">
 </head>
 <body>
@@ -10,26 +12,66 @@
 		<div class="logo">
 			<img src="http://placehold.it/40x40">
 		</div>
-
-		<input class="search_bar" type="search">
+		<div class="search_div">
+			<input placeholder="Rechercher"	type="search">
+		</div>
 		<div class="links">
 			<a href="#" class="link">Devenez Hote</a>
 			<a href="#" class="link">Aide</a>
 			<a href="#" class="link">Inscription</a>
 			<a href="#" class="link">Connexion</a>
-		</div>			
-	</div>
-	<div class="jumbotron">
-		<div class="text_jumb">
-			<h1 class="title">
-				En direct de Los Angeles
-			</h1>
-			<p class="corporate">
-				Rejoignez-nous pour découvrir l'annonce de Brian Chesky, notre cofondateur et PDG, et entrer dans un monde de voyages.
-			</p>
-			<a href="#" class="link_corporate">Suivre la présentation</a>
 		</div>
-		<img src="http://placehold.it/400x350">
-	</div>	
+	</div>
+	<div id="fullMenu">
+		<div class="fullLinks">
+			<a href="#" class="fullLink">Devenez Hote</a>
+			<hr>
+			<a href="#" class="fullLink">Aide</a>
+			<hr>
+			<a href="#" class="fullLink">Inscription</a>
+			<a href="#" class="fullLink">Connexion</a>
+		</div>
+	</div>
+<!-- 	<div class="desktopLayout"> -->
+		<div class="jumbotron">
+			<div class="text_jumb">
+				<h1 class="title">
+					En direct de Los Angeles
+				</h1>
+				<p class="corporate">
+					Rejoignez-nous pour découvrir l'annonce de Brian Chesky, notre cofondateur et PDG, et entrer dans un monde de voyages.
+				</p>
+				<a href="#" class="link_corporate">Suivre la présentation</a>
+			</div>	
+		</div>
+		<div class="div_form">
+			<form action="#">
+				<div class="form_travel where">
+					<label for="place">Ou</label>
+					<input id="place" type="search">
+				</div>
+				<div class="form_travel when">
+					<label for="start_reserv">Quand</label>
+					<div>	
+						<input id="start_reserv" class="start_reservation" name="date" type="date">-->
+						<input id="end_reserv" class="end_reservation" name="date" type="date">
+					</div>
+				</div>
+				<div class="form_travel number_residents">
+					<label for="travelers">Voyageurs</label>
+					<select name="travelers" id="travelers">
+						<option value="1">1 Personne</option>
+						<option value="1">1 Personne</option>
+						<option value="1">1 Personne</option>
+						<option value="1">1 Personne</option>
+						<option value="1">1 Personne</option>
+						<option value="1">1 Personne</option>
+					</select>
+				</div>
+			</form>
+		</div>
+<!-- 	</div> -->
+	<script   src="https://code.jquery.com/jquery-3.1.1.js"   integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="   crossorigin="anonymous"></script>
+	<script src="app/app.js"></script>
 </body>
 </html>

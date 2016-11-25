@@ -1,0 +1,22 @@
+@media screen and (max-width: 800px){
+	.links{
+		visibility: hidden;
+	}
+	#fullMenu{
+		position: relative;
+		z-index: 2;
+		display: none;
+		margin: auto;
+	}
+	.fullLink{
+		margin: 0.8em;
+	}
+	.fullLinks{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		hr{
+			width: 100%;
+		}
+	}
+} 
